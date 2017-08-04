@@ -8,6 +8,8 @@ require 'site_prism'
 require_relative 'page_objects'
 World(PageObjects)
 
+#$data = YAML.load_file(File.dirname(__FILE__) + "/data/#{$env}.yaml")
+
 Capybara.configure do |config|
     config.default_driver = :selenium
     config.app_host = 'http://www.google.com'
